@@ -13,6 +13,8 @@ function initMap() {
                 lng: position.coords.longitude
             };
 
+            $("label[for='lat']").text(pos.lat);
+            $("label[for='lng']").text(pos.lng);
             infoWindow.setPosition(pos);
             infoWindow.setContent('Location found.');
             map.setCenter(pos);
